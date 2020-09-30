@@ -97,6 +97,7 @@ planning
 // when one player gets 3 in a row or diagonally, its a win 
     // can program this in an if statement and class name as hidden or unhidden 
 // make a pop up only visible when one person wins  
+alternate clicking mean its P1 or P2s turn i.e. even clicks are P1 and odd clicks are P2
 
 // make a reset button so you can start the game over again --> on click, reset all of the icons to hidden again and restart the game 
 

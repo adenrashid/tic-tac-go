@@ -8,59 +8,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <div class="fullpage">
-    <header>
-        <h1 class="title">Tic Tac<img class="go" src="images/go.png" alt=""></h1>
-    </header>
+    <div class="heading-wrap">
+        <header class="heading">
+            <h1 class="title">Tic Tac</h1>
+            <img class="go" src="images/go.png" alt="">
+        </header>
+    </div>
 
     <body>
-        <div class="buttons">
-            <button class="playerVPlayer">Player Vs Player</button>
-            <button class="playerVComputer">Player Vs Computer</button>
+        <div class="choices">
+            <div class="player1Choose">P1 choose your icon</div>
+            <div class="player2Choose hidden">P2 choose your icon</div>
         </div>
         <div class="icons">
-            <div>Icon 1</div>
-            <div>Icon 2</div>
-            <div>Icon 3</div>
-            <div>Icon 4</div>
-            <div>Icon 5</div>
+            <img class="icon1" src="images/pikachu.png" alt="">
+            <img class="icon2" src="images/charmander.png" alt="">
+            <img class="icon3" src="images/bullbasaur.png" alt="">
+            <img class="icon4" src="images/squirtle.png" alt="">
+            <img class="icon5" src="images/eevee.png" alt="">
         </div>
-        <div class="game-container">
-            <div class="box1">
-                <span class="contents1 hidden">1</span>
-            </div>
-            <div class="box2">
-                <span class="contents2 hidden">2</span>
-            </div>
-            <div class="box3">
-                <span class="contents3 hidden">3</span>
-            </div>
-            <div class="box4">
-                <span class="contents4 hidden">4</span>
-            </div>
-            <div class="box5">
-                <span class="contents5 hidden">5</span>
-            </div>
-            <div class="box6">
-                <span class="contents6 hidden">6</span>
-            </div>
-            <div class="box7">
-                <span class="contents7 hidden">7</span>
-            </div>
-            <div class="box8">
-                <span class="contents8 hidden">8</span>
-            </div>
-            <div class="box9">
-                <span class="contents9 hidden">9</span>
-            </div>
+        <div class="turns">
+            <div class="player1turn">P1's turn</div>
+            <div class="player2turn hidden">P2's turn</div>
         </div>
+        
+        <div class="game-wrap">
+            <div class="game-container">
+                <div class="box1">
+                    <span class="contents1 hidden"> </span>
+                </div>
+                <div class="box2">
+                    <span class="contents2 hidden"> </span>
+                </div>
+                <div class="box3">
+                    <span class="contents3 hidden"> </span>
+                </div>
+                <div class="box4">
+                    <span class="contents4 hidden"> </span>
+                </div>
+                <div class="box5">
+                    <span class="contents5 hidden"> </span>
+                </div>
+                <div class="box6">
+                    <span class="contents6 hidden"> </span>
+                </div>
+                <div class="box7">
+                    <span class="contents7 hidden"> </span>
+                </div>
+                <div class="box8">
+                    <span class="contents8 hidden"> </span>
+                </div>
+                <div class="box9">
+                    <span class="contents9 hidden"> </span>
+                </div>
+        </div>
+
+        </div>
+        <div class="victory1 hidden">Player 1 Wins!</div>
+        <div class="victory2 hidden">Player 2 Wins!</div>
+        <div class="draw hidden">It's a draw...</div>
         <div class="reset">
             <button class="resetButton">Play again!</button>
         </div>
-
-        <div class="victory hidden">Player Wins!</div>
-        <div class="draw hidden">It's a draw...</div>
 </div>
     <script src="app.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
 </body>
 </html>
