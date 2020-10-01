@@ -233,18 +233,18 @@ function reset() {
     };
 victory1.classList.add('gone');
 victory2.classList.add('gone');
+victory1.classList.remove('win');
+victory2.classList.remove('win');
 draw.classList.add('gone');
-player2Turn.classList.add('hidden');
+player1Turn.classList.add('gone');
+player2Turn.classList.add('gone');
 player1Turn.classList.remove('hidden');
+player2Turn.classList.add('hidden');
 player1Choose.classList.remove('hidden');
 player2Choose.classList.add('hidden');
 play.classList.add('hidden');
-player1Turn.classList.add('gone');
-player2Turn.classList.add('gone');
 gameContainer.classList.add('gone');
 resetButton.classList.add('gone');
-victory1.classList.remove('win');
-victory2.classList.remove('win');
 };
 
 resetButton.addEventListener('click', reset);

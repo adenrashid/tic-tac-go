@@ -164,9 +164,6 @@ audio {
     border-radius: 8px;
 }
 
-.game-wrap {
-}
-
 .game-container {
     display: grid;
     grid-template-columns: 150px 150px 150px;
