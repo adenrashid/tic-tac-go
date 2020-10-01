@@ -14,6 +14,11 @@ body {
     height: 100%;
 }
 
+audio {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
 .heading {
     display: flex;
     flex-direction: row;
@@ -79,9 +84,36 @@ body {
     justify-content: space-around;
 }
 
+.pikachu {
+    animation: shakeY;
+    animation-duration: 2s;
+}
+
+.charmander {
+    animation: swing;
+    animation-duration: 2s;
+}
+
+.bulbasaur {
+    animation: shakeX;
+    animation-duration: 2s;
+}
+
+.squirtle {
+    animation: rubberBand;
+    animation-duration: 2s;
+}
+
+.eevee {
+    animation: jello;
+    animation-duration: 2s;
+}
+
 .pikachu:hover, .squirtle:hover, .bulbasaur:hover, .charmander:hover, .squirtle:hover, .eevee:hover {
     background-color: rgba(217,222,249,0.5);
     cursor: pointer;
+    animation: pulse;
+    animation-duration: 300ms;
 }
 
 .icons > img {

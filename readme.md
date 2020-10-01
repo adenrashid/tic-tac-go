@@ -120,3 +120,8 @@ Technologies Used: HTML, CSS, Javascript
 Approach: Outlined above in planning, written plan and mockup drawn first, then created in HTML/CSS and Javascript
 Instructions: P1 picks an icon, then P2 picks an icon. Then players play tic tac GO until one wins or it draws. Reset button at the bottom.
 Unsolved problems: Simplifying JS Code to use arrays and for loops, as it is very repetitive currently. 
+Icons: https://www.flaticon.com/packs/pokemon-go/2
+Background Image: https://www.pinterest.com.au/pin/151574343683447160/
+Audio: https://www.youtube.com/watch?v=-BKfhq_TtcE&t=38s&ab_channel=braix
+Animations: https://animate.style/
+
