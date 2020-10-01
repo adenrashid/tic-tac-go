@@ -52,7 +52,7 @@ audio {
     position: absolute;
     width: 90%;
     background-color: rgba(239, 239, 239, 1);
-    border: 1px solid black;
+    border: 2px solid black;
     text-align: center;
     font-size: 16px;
     padding: 8px;
@@ -61,7 +61,7 @@ audio {
 .player2Choose {
     position: absolute;
     background-color: rgba(239, 239, 239, 1);
-    border: 1px solid black;
+    border: 2px solid black;
     width: 90%;
     text-align: center;
     font-size: 16px;
@@ -70,7 +70,7 @@ audio {
 
 .play {
     background-color: rgba(239, 239, 239, 1);
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 8px;
     font-size: 16px;
 }
@@ -128,7 +128,7 @@ audio {
 .player1turn {
     display: inline;
     background-color: rgba(239, 239, 239, 1);
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
     text-align: left;
 }
@@ -136,7 +136,7 @@ audio {
 .player2turn {
     display: inline;
     background-color: rgba(239, 239, 239, 1);
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
     text-align: right;
 }
