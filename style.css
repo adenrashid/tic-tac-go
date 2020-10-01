@@ -180,7 +180,7 @@ audio {
 }
 
 .box {
-    border: 12px solid transparent;
+    border: 12px solid black;
     border-image: url(tree.png) 62 round;
     text-align: center;
     line-height: 55px;
