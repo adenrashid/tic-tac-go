@@ -1,4 +1,5 @@
 // variable declaration
+
 var boxes = document.querySelectorAll('span');
 var resetButton = document.querySelector('.resetButton');
 
@@ -9,8 +10,10 @@ var icons = document.querySelectorAll('img');
 var player1 = null;
 var player2 = null;
 
-// tracking clicks on icons, odd clicks are P1, even clicks are P2
 var timesClicked = 0;
+
+var player1Score = 0;
+var player2Score = 0;
 
 // choose your icon
 
@@ -69,68 +72,100 @@ function handleClick(event) {
     // horizontal line wins
     if (boxes[0].classList[1] == boxes[1].classList[1] && boxes[0].classList[1] == boxes[2].classList[1]) {
         if (boxes[0].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         };
     }
     if (boxes[3].classList[1] == boxes[4].classList[1] && boxes[3].classList[1] == boxes[5].classList[1]) {
         if (boxes[3].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[3].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         };
     };
     if (boxes[6].classList[1] == boxes[7].classList[1] && boxes[6].classList[1] == boxes[8].classList[1]) {
         if (boxes[6].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[6].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
     };
     // vertical line wins
     if (boxes[0].classList[1] == boxes[3].classList[1] && boxes[0].classList[1] == boxes[6].classList[1]) {
         if (boxes[0].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
     }; 
     if (boxes[1].classList[1] == boxes[4].classList[1] && boxes[1].classList[1] == boxes[7].classList[1]) {
         if (boxes[1].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[1].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
     }; 
     if (boxes[2].classList[1] == boxes[5].classList[1] && boxes[2].classList[1] == boxes[8].classList[1]) {
         if (boxes[2].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[2].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
     }; 
     // diagonal line wins
     if (boxes[0].classList[1] == boxes[4].classList[1] && boxes[0].classList[1] == boxes[8].classList[1]) {
         if (boxes[0].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
     }; 
     if (boxes[2].classList[1] == boxes[4].classList[1] && boxes[2].classList[1] == boxes[6].classList[1]) {
         if (boxes[2].classList[1] == player1.classList[0]) {
-            document.querySelector('.victory1').classList.remove('hidden');
+            document.querySelector('.victory1').classList.remove('gone');
+            player1Score++;
+            document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[2].classList[1] == player2.classList[0]) {
-            document.querySelector('.victory2').classList.remove('hidden');
+            document.querySelector('.victory2').classList.remove('gone');
+            player2Score++;
+            document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
     }
     for (var i = 0; i < boxes.length; i++) {
@@ -139,13 +174,13 @@ function handleClick(event) {
         }
     }
     // draw condition
-    if (timesClicked % 9 == 0 && document.querySelector('.victory1').classList.contains('hidden') && document.querySelector('.victory2').classList.contains('hidden')) {
-        document.querySelector('.draw').classList.remove('hidden')
+    if (timesClicked % 9 == 0 && document.querySelector('.victory1').classList.contains('gone') && document.querySelector('.victory2').classList.contains('gone')) {
+        document.querySelector('.draw').classList.remove('gone')
     };
     if (event.target.classList != " ") {
         event.target.removeEventListener('click', handleClick)
     };
-    if (document.querySelector('.victory1').classList.contains('hidden') == false || document.querySelector('.victory2').classList.contains('hidden') == false) {
+    if (document.querySelector('.victory1').classList.contains('gone') == false || document.querySelector('.victory2').classList.contains('gone') == false) {
         for (var i = 0; i < boxes.length; i++) {
             boxes[i].removeEventListener('click', handleClick);
         }
@@ -168,9 +203,9 @@ function reset() {
     for (var i = 1; i < icons.length; i++) {
         icons[i].addEventListener('click', addToPlayers);
     };
-    document.querySelector('.victory1').classList.add('hidden');
-    document.querySelector('.victory2').classList.add('hidden');
-    document.querySelector('.draw').classList.add('hidden');
+    document.querySelector('.victory1').classList.add('gone');
+    document.querySelector('.victory2').classList.add('gone');
+    document.querySelector('.draw').classList.add('gone');
     document.querySelector('.player2turn').classList.add('hidden');
     document.querySelector('.player1turn').classList.remove('hidden');
     document.querySelector('.player1Choose').classList.remove('hidden');

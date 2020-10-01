@@ -116,3 +116,7 @@ alternate clicking mean its P1 or P2s turn i.e. even clicks are P1 and odd click
 
 * * *
 
+Technologies Used: HTML, CSS, Javascript
+Approach: Outlined above in planning, written plan and mockup drawn first, then created in HTML/CSS and Javascript
+Instructions: P1 picks an icon, then P2 picks an icon. Then players play tic tac GO until one wins or it draws. Reset button at the bottom.
+Unsolved problems: Simplifying JS Code to use arrays and for loops, as it is very repetitive currently. 

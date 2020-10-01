@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <div class="fullpage">
+    <audio controls>
+        <source src="" type="audio/mpeg">
+    </audio>
     <div class="heading-wrap">
         <header class="heading">
             <h1 class="title">Tic Tac</h1>
@@ -20,6 +23,12 @@
             <div class="player1Choose">P1 choose your icon</div>
             <div class="player2Choose hidden">P2 choose your icon</div>
             <div class="play hidden">Play!</div>
+        </div>
+        <div class="winWrap">
+            <div class="winCounter">Score:
+                <div class="score1">P1: 0</div>
+                <div class="score2">P2: 0</div>
+            </div>
         </div>
         <div class="icons">
             <img class="pikachu" src="images/pikachu.png" alt="">
@@ -35,31 +44,31 @@
         
         <div class="game-wrap">
             <div class="game-container gone">
-                <div class="box1">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box2">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box3">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box4">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box5">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box6">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box7">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box8">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
-                <div class="box9">
+                <div class="box">
                     <span class="contents hidden"> </span>
                 </div>
         </div>
@@ -67,9 +76,9 @@
         </div>
 
         <div class="messages">
-            <div class="victory1 hidden">Player 1 Wins!</div>
-            <div class="victory2 hidden">Player 2 Wins!</div>
-            <div class="draw hidden">It's a draw...</div>
+            <div class="victory1 gone">Player 1 Wins!</div>
+            <div class="victory2 gone">Player 2 Wins!</div>
+            <div class="draw gone">It's a draw...</div>
         </div>
         <div class="reset">
             <button class="resetButton gone">Play again!</button>
