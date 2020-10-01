@@ -15,6 +15,9 @@ var timesClicked = 0;
 var player1Score = 0;
 var player2Score = 0;
 
+var player1Choose = 
+var player2Choose = 
+
 // choose your icon
 
 for (var i = 1; i < icons.length; i++) {
@@ -73,11 +76,13 @@ function handleClick(event) {
     if (boxes[0].classList[1] == boxes[1].classList[1] && boxes[0].classList[1] == boxes[2].classList[1]) {
         if (boxes[0].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         };
@@ -85,11 +90,13 @@ function handleClick(event) {
     if (boxes[3].classList[1] == boxes[4].classList[1] && boxes[3].classList[1] == boxes[5].classList[1]) {
         if (boxes[3].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[3].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         };
@@ -97,11 +104,13 @@ function handleClick(event) {
     if (boxes[6].classList[1] == boxes[7].classList[1] && boxes[6].classList[1] == boxes[8].classList[1]) {
         if (boxes[6].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[6].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
@@ -110,11 +119,13 @@ function handleClick(event) {
     if (boxes[0].classList[1] == boxes[3].classList[1] && boxes[0].classList[1] == boxes[6].classList[1]) {
         if (boxes[0].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
@@ -122,11 +133,13 @@ function handleClick(event) {
     if (boxes[1].classList[1] == boxes[4].classList[1] && boxes[1].classList[1] == boxes[7].classList[1]) {
         if (boxes[1].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[1].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
@@ -134,11 +147,13 @@ function handleClick(event) {
     if (boxes[2].classList[1] == boxes[5].classList[1] && boxes[2].classList[1] == boxes[8].classList[1]) {
         if (boxes[2].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[2].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
@@ -147,11 +162,13 @@ function handleClick(event) {
     if (boxes[0].classList[1] == boxes[4].classList[1] && boxes[0].classList[1] == boxes[8].classList[1]) {
         if (boxes[0].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
@@ -159,11 +176,13 @@ function handleClick(event) {
     if (boxes[2].classList[1] == boxes[4].classList[1] && boxes[2].classList[1] == boxes[6].classList[1]) {
         if (boxes[2].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('gone');
+            document.querySelector('.victory1').classList.add('win');
             player1Score++;
             document.querySelector('.score1').textContent = `P1: ${player1Score}`;
         };
         if (boxes[2].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('gone');
+            document.querySelector('.victory2').classList.add('win');
             player2Score++;
             document.querySelector('.score2').textContent = `P2: ${player2Score}`;
         }
@@ -215,6 +234,8 @@ function reset() {
     document.querySelector('.player2turn').classList.add('gone');
     document.querySelector('.game-container').classList.add('gone');
     document.querySelector('.resetButton').classList.add('gone');
+    document.querySelector('.victory1').classList.remove('win');
+    document.querySelector('.victory2').classList.remove('win');
 };
 
 resetButton.addEventListener('click', reset);
