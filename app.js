@@ -5,21 +5,14 @@ var resetButton = document.querySelector('.resetButton');
 var gameContainer = document.querySelector('.game-container')
 
 var icons = document.querySelectorAll('img');
-var pikachu = icons[1];
-var charmander = icons[1]
-var bulbasaur = icons[3];
-var squirtle = icons[4];
-var eevee = icons[5];
 
 var player1 = null;
 var player2 = null;
 
-// tracking clicks, odd clicks are P1, even clicks are P2
+// tracking clicks on icons, odd clicks are P1, even clicks are P2
 var timesClicked = 0;
 
 // choose your icon
-
-// debugger 
 
 for (var i = 1; i < icons.length; i++) {
     icons[i].addEventListener('click', addToPlayers);
@@ -28,9 +21,11 @@ for (var i = 1; i < icons.length; i++) {
 function addToPlayers(event) {
     if (timesClicked == 0) {
         player1 = event.target;
+        player1.removeEventListener('click', addToPlayers)
         timesClicked++;
         document.querySelector('.player1Choose').classList.add('hidden');
         document.querySelector('.player2Choose').classList.remove('hidden');
+
     } else if (timesClicked == 1) {
         player2 = event.target;
         timesClicked++;
@@ -40,6 +35,11 @@ function addToPlayers(event) {
         document.querySelector('.player1Choose').classList.add('hidden');
         document.querySelector('.player2Choose').classList.add('hidden');
         document.querySelector('.play').classList.remove('hidden');
+        document.querySelector('.player1turn').classList.remove('gone');
+        document.querySelector('.player2turn').classList.remove('gone');
+        document.querySelector('.game-container').classList.remove('gone');
+        document.querySelector('.resetButton').classList.remove('gone');
+        timesClicked = 0;
     };
 };
 
@@ -48,8 +48,6 @@ function addToPlayers(event) {
 for (var i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener('click', handleClick);
 };
-
-var timesClicked = 0;
 
 function handleClick(event) {
     event.target.classList.remove('hidden');
@@ -67,76 +65,77 @@ function handleClick(event) {
     };
     // horizontal line wins
     if (boxes[0].classList[1] == boxes[1].classList[1] && boxes[0].classList[1] == boxes[2].classList[1]) {
-        if (boxes[0].classList[1] == 'pikachu') {
+        if (boxes[0].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[0].classList[1] == 'eevee') {
+        if (boxes[0].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         };
     }
     if (boxes[3].classList[1] == boxes[4].classList[1] && boxes[3].classList[1] == boxes[5].classList[1]) {
-        if (boxes[3].classList[1] == 'pikachu') {
+        if (boxes[3].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[3].classList[1] == 'eevee') {
+        if (boxes[3].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         };
     };
     if (boxes[6].classList[1] == boxes[7].classList[1] && boxes[6].classList[1] == boxes[8].classList[1]) {
-        if (boxes[6].classList[1] == 'pikachu') {
+        if (boxes[6].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[6].classList[1] == 'eevee') {
+        if (boxes[6].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         }
     };
     // vertical line wins
     if (boxes[0].classList[1] == boxes[3].classList[1] && boxes[0].classList[1] == boxes[6].classList[1]) {
-        if (boxes[0].classList[1] == 'pikachu') {
+        if (boxes[0].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[0].classList[1] == 'eevee') {
+        if (boxes[0].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         }
     }; 
     if (boxes[1].classList[1] == boxes[4].classList[1] && boxes[1].classList[1] == boxes[7].classList[1]) {
-        if (boxes[1].classList[1] == 'pikachu') {
+        if (boxes[1].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[1].classList[1] == 'eevee') {
+        if (boxes[1].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         }
     }; 
     if (boxes[2].classList[1] == boxes[5].classList[1] && boxes[2].classList[1] == boxes[8].classList[1]) {
-        if (boxes[2].classList[1] == 'pikachu') {
+        if (boxes[2].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[2].classList[1] == 'eevee') {
+        if (boxes[2].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         }
     }; 
     // diagonal line wins
     if (boxes[0].classList[1] == boxes[4].classList[1] && boxes[0].classList[1] == boxes[8].classList[1]) {
-        if (boxes[0].classList[1] == 'pikachu') {
+        if (boxes[0].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[0].classList[1] == 'eevee') {
+        if (boxes[0].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         }
     }; 
     if (boxes[2].classList[1] == boxes[4].classList[1] && boxes[2].classList[1] == boxes[6].classList[1]) {
-        if (boxes[2].classList[1] == 'pikachu') {
+        if (boxes[2].classList[1] == player1.classList[0]) {
             document.querySelector('.victory1').classList.remove('hidden');
         };
-        if (boxes[2].classList[1] == 'eevee') {
+        if (boxes[2].classList[1] == player2.classList[0]) {
             document.querySelector('.victory2').classList.remove('hidden');
         }
     }
     for (var i = 0; i < boxes.length; i++) {
         if (event.target.classList.contains('hidden')) {
-            timesClicked++;
+            timesClickedBoxes++;
         }
     }
+    // draw condition
     if (timesClicked % 9 == 0 && document.querySelector('.victory1').classList.contains('hidden') && document.querySelector('.victory2').classList.contains('hidden')) {
         document.querySelector('.draw').classList.remove('hidden')
     };
@@ -160,12 +159,24 @@ function reset() {
         boxes[i].classList.remove('charmander');
         boxes[i].classList.remove('squirtle');
         boxes[i].classList.remove('bulbasaur');
+        player1 = null;
+        player2 = null;
+    };
+    for (var i = 1; i < icons.length; i++) {
+        icons[i].addEventListener('click', addToPlayers);
     };
     document.querySelector('.victory1').classList.add('hidden');
     document.querySelector('.victory2').classList.add('hidden');
     document.querySelector('.draw').classList.add('hidden');
     document.querySelector('.player2turn').classList.add('hidden');
     document.querySelector('.player1turn').classList.remove('hidden');
+    document.querySelector('.player1Choose').classList.remove('hidden');
+    document.querySelector('.player2Choose').classList.add('hidden');
+    document.querySelector('.play').classList.add('hidden');
+    document.querySelector('.player1turn').classList.add('gone');
+    document.querySelector('.player2turn').classList.add('gone');
+    document.querySelector('.game-container').classList.add('gone');
+    document.querySelector('.resetButton').classList.add('gone');
 };
 
 resetButton.addEventListener('click', reset);

@@ -245,3 +245,7 @@ body {
     background-image: url(images/bullbasaur.png); 
     background-size: contain;  
 }
+
+.gone {
+    display: none;
+}
