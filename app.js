@@ -25,6 +25,8 @@ var timesClicked = 0;
 var player1Score = 0;
 var player2Score = 0;
 
+var audio = new Audio('winaudio.mp3');
+
 // choose your icon
 
 for (var i = 1; i < icons.length; i++) {
@@ -84,12 +86,14 @@ function handleClick(event) {
         if (boxes[0].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         };
@@ -98,12 +102,14 @@ function handleClick(event) {
         if (boxes[3].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[3].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         };
@@ -112,12 +118,14 @@ function handleClick(event) {
         if (boxes[6].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[6].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         }
@@ -127,12 +135,14 @@ function handleClick(event) {
         if (boxes[0].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         }
@@ -141,12 +151,14 @@ function handleClick(event) {
         if (boxes[1].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[1].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         }
@@ -155,12 +167,14 @@ function handleClick(event) {
         if (boxes[2].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[2].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         }
@@ -170,12 +184,14 @@ function handleClick(event) {
         if (boxes[0].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[0].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         }
@@ -184,12 +200,14 @@ function handleClick(event) {
         if (boxes[2].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
             victory1.classList.add('win');
+            audio.play();
             player1Score++;
             score1.textContent = `P1: ${player1Score}`;
         };
         if (boxes[2].classList[1] == player2.classList[0]) {
             victory2.classList.remove('gone');
             victory2.classList.add('win');
+            audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         }
