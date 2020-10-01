@@ -26,6 +26,9 @@ var player1Score = 0;
 var player2Score = 0;
 
 var audio = new Audio('winaudio.mp3');
+var audio2 = new Audio('chooseaudio.mp3');
+var audio3 = new Audio('pop.mp3');
+var audio4 = new Audio('draw.mp3');
 
 // choose your icon
 
@@ -36,15 +39,16 @@ for (var i = 1; i < icons.length; i++) {
 function addToPlayers(event) {
     if (timesClicked == 0) {
         player1 = event.target;
-        player1.removeEventListener('click', addToPlayers)
+        player1.removeEventListener('click', addToPlayers);
         timesClicked++;
         player1Choose.classList.add('hidden');
         player2Choose.classList.remove('hidden');
-
+        audio2.play();
     } else if (timesClicked == 1) {
         player2 = event.target;
         timesClicked++;
         player2Choose.classList.remove('hidden');
+        audio2.play();
     };
     if (timesClicked > 1) {
         player1Choose.classList.add('hidden');
@@ -70,6 +74,7 @@ for (var i = 0; i < boxes.length; i++) {
 function handleClick(event) {
     event.target.classList.remove('hidden');
     timesClicked++;
+    audio3.play();
 // player2 is even number of clicks
     if (timesClicked % 2 == 0) {
         event.target.classList.add(player2.classList[0]);
@@ -219,7 +224,8 @@ function handleClick(event) {
     }
 // draw condition
     if (timesClicked % 9 == 0 && victory1.classList.contains('gone') && victory2.classList.contains('gone')) {
-        draw.classList.remove('gone')
+        draw.classList.remove('gone');
+        audio4.play();
     };
     if (event.target.classList != " ") {
         event.target.removeEventListener('click', handleClick)
