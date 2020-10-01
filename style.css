@@ -20,8 +20,10 @@ body {
 }
 
 .heading-wrap {
-    width: 420px;
     margin: 0 auto;
+    background-color: rgba(56, 169, 234, 1);
+    justify-content: center;
+    border: 2px solid black;
 }
 
 .title {
@@ -67,7 +69,8 @@ body {
     justify-content: space-around;
 }
 
-.icons:hover {
+.pikachu:hover, .squirtle:hover, .bulbasaur:hover, .charmander:hover, .squirtle:hover, .eevee:hover {
+    background-color: rgba(217,222,249,0.5);
     cursor: pointer;
 }
 
@@ -133,19 +136,9 @@ body {
     background-color: rgba(217,222,249,0.5);
 }
 
-.box2 {
-    border: 2px solid black;
-    text-align: center;
-}
-
 .box2:hover {
     cursor: pointer;
     background-color: rgba(217,222,249,0.5);
-}
-
-.box3 {
-    border: 2px solid black;
-    text-align: center;
 }
 
 .box3:hover {
@@ -153,19 +146,9 @@ body {
     background-color: rgba(217,222,249,0.5);
 }
 
-.box4 {
-    border: 2px solid black;
-    text-align: center;
-}
-
 .box4:hover {
     cursor: pointer;
     background-color: rgba(217,222,249,0.5);
-}
-
-.box5 {
-    border: 2px solid black;
-    text-align: center;
 }
 
 .box5:hover {
@@ -173,19 +156,9 @@ body {
     background-color: rgba(217,222,249,0.5);
 }
 
-.box6 {
-    border: 2px solid black;
-    text-align: center;
-}
-
 .box6:hover {
     cursor: pointer;
     background-color: rgba(217,222,249,0.5);
-}
-
-.box7 {
-    border: 2px solid black;
-    text-align: center;
 }
 
 .box7:hover {
@@ -193,19 +166,9 @@ body {
     background-color: rgba(217,222,249,0.5);
 }
 
-.box8 {
-    border: 2px solid black;
-    text-align: center;
-}
-
 .box8:hover {
     cursor: pointer;
     background-color: rgba(217,222,249,0.5);
-}
-
-.box9 {
-    border: 2px solid black;
-    text-align: center;
 }
 
 .box9:hover {
@@ -256,4 +219,29 @@ body {
     font-size: 16px;
     padding: 8px;
     border: 1px solid black;
+}
+
+.pikachu {
+    background-image: url(images/pikachu.png); 
+    background-size: contain;
+}
+
+.charmander {
+    background-image: url(images/charmander.png); 
+    background-size: contain;  
+}
+
+.squirtle {
+    background-image: url(images/squirtle.png); 
+    background-size: contain;  
+}
+
+.eevee {
+    background-image: url(images/eevee.png); 
+    background-size: contain;
+}
+
+.bulbasaur {
+    background-image: url(images/bullbasaur.png); 
+    background-size: contain;  
 }
