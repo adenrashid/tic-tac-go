@@ -17,6 +17,7 @@ body {
 .heading {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .heading-wrap {
@@ -43,21 +44,30 @@ body {
 }
 
 .player1Choose {
-    display: inline;
+    position: absolute;
+    width: 90%;
     background-color: rgba(239, 239, 239, 1);
     border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
+    padding: 8px;
 }
 
 .player2Choose {
-    display: inline;
+    position: absolute;
+    background-color: rgba(239, 239, 239, 1);
+    border: 1px solid black;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.play {
     background-color: rgba(239, 239, 239, 1);
     border: 1px solid black;
     padding: 8px;
     font-size: 16px;
-    text-align: left;
 }
 
 .icons {
@@ -195,15 +205,37 @@ body {
 }
 
 .victory1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    font-size: 48px;
+    text-align: center;
     background-color: rgba(239, 239, 239, 1);
-    font-size: 16px;
     padding: 8px;
     border: 1px solid black;
 }
 
 .victory2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    font-size: 48px;
+    text-align: center;
     background-color: rgba(239, 239, 239, 1);
-    font-size: 16px;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.draw {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    font-size: 48px;
+    text-align: center;
+    background-color: rgba(239, 239, 239, 1);
     padding: 8px;
     border: 1px solid black;
 }
@@ -213,14 +245,6 @@ body {
     background-color: lightgrey;
     border: 3px solid black;
 }
-
-.draw {
-    background-color: rgba(239, 239, 239, 1);
-    font-size: 16px;
-    padding: 8px;
-    border: 1px solid black;
-}
-
 .pikachu {
     background-image: url(images/pikachu.png); 
     background-size: contain;

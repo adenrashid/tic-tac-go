@@ -40,6 +40,9 @@ function addToPlayers(event) {
         document.querySelector('.game-container').classList.remove('gone');
         document.querySelector('.resetButton').classList.remove('gone');
         timesClicked = 0;
+        for (var i = 1; i < icons.length; i++) {
+            icons[i].removeEventListener('click', addToPlayers);
+        };
     };
 };
 
