@@ -1,4 +1,4 @@
-
+(https://github.com/adenrashid/tic-tac-go/blob/master/images/tic%20tac%20go.png)
 
 Click here to play: https://adenrashid.github.io/tic-tac-go/
 
