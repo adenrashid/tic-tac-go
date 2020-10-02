@@ -261,6 +261,7 @@ audio {
     animation: shakeX;
     animation-duration: 2s;
 }
+
 .pikachu {
     background-image: url(images/pikachu.png); 
     background-size: contain;
@@ -311,8 +312,14 @@ audio {
     }
 
     .box {
+        border: 12px solid black;
         height: 90px;
         width: 90px;
+        border-image: url(tree.png) 20 round;
+    }
+
+    .box:hover {
+        background-image: none; 
     }
 
     .player1turn {
