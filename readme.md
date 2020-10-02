@@ -134,9 +134,9 @@ Instructions: P1 picks an icon, then P2 picks an icon. Then players play tic tac
 Unsolved problems: Simplifying JS Code to use arrays and for loops, as it is very repetitive currently. 
 
 3. Problems 
-One of the problems I faced was trying to get the user to choose which icon they wanted to use and implementing that in the grid. I didn't want P1 and P2 to be able to choose the same icon, so I had to figure out a way to prevent that from happening. To solve this I used removeEventListener once a player had clicked on which icon they wanted to play with, so the other player couldnt choose the same icon.
+One of the problems I faced was trying to get the user to choose which icon they wanted to use and implementing that in the grid. I didn't want P1 and P2 to be able to choose the same icon, so I had to figure out a way to prevent that from happening. To solve this I used removeEventListener once a player had clicked on which icon they wanted to play with, so the other player couldnt choose the same icon. This was the same with once a player had placed an icon in a grid, I didnt want it to be able to be changed, so had to removeEventListener again. 
 
-I also didnt want to display the game board until users had selected their icons. This was also a challenge. To resolve this I used display: none and used the .classList add and remove functions. 
+I didnt want to display the game board until users had selected their icons. This was also a challenge. To resolve this I used display: none and used the .classList add and remove functions. 
 
 A CSS problem I faced was getting the victory messages to show up overlapping the game. I fixed this by using the display: none function and then removing this and using position: absolute. Initially I had their opacity set at 0 and then changed it to 1 but this meant that the player couldnt click on the grid because the message was overlapping it. Setting display: none fixed this. 
 
@@ -159,3 +159,4 @@ Credit: Youtube (Creative Commons Attribution license (reuse allowed))
 Animations: https://animate.style/
 Font: Google Fonts
 Audio sound effects: https://freesound.org/browse/tags/pop/ (free to use)
+GO: https://www.flickr.com/photos/bagogames/25914117692/in/photostream/ (Creative Commons)
