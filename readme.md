@@ -1,13 +1,15 @@
-(https://github.com/adenrashid/tic-tac-go/blob/master/images/tic%20tac%20go.png)
+![game](https://github.com/adenrashid/tic-tac-go/blob/master/images/tic%20tac%20go.png)
 
 Click here to play: https://adenrashid.github.io/tic-tac-go/
 
-1. How to Play 
+How to Play 
+
 The objective of the game is to get 3 of the same symbol in he samr row, column, or diagnomally. The first player that achieves this wins! 
 The game involves two players, and I have made it possible for players to choose their icon. Just click your icon when the game prompts you to select it. 
 Enjoy!
 
-2. Development
+Development
+
 Technologies Used: HTML, CSS, Javascript
 
 Approach: Outlined above in planning, written plan and mockup drawn first. I figured out how the game would work in my planning and then implemented this when I started building the game. Started by declaring variables, then writing the functions and within those, all the if statements to create the logic of the game. 
@@ -17,7 +19,8 @@ After I got the Javascript functionality working and met the core requirements s
 Instructions: P1 picks an icon, then P2 picks an icon. Then players play tic tac GO until one wins or it draws. Reset button at the bottom.
 Unsolved problems: Simplifying JS Code to use arrays and for loops, as it is very repetitive currently. 
 
-3. Problems 
+Problems 
+
 One of the problems I faced was trying to get the user to choose which icon they wanted to use and implementing that in the grid. I didn't want P1 and P2 to be able to choose the same icon, so I had to figure out a way to prevent that from happening. To solve this I used removeEventListener once a player had clicked on which icon they wanted to play with, so the other player couldnt choose the same icon. This was the same with once a player had placed an icon in a grid, I didnt want it to be able to be changed, so had to removeEventListener again. 
 
 I didnt want to display the game board until users had selected their icons. This was also a challenge. To resolve this I used display: none and used the .classList add and remove functions. 
@@ -26,22 +29,33 @@ A CSS problem I faced was getting the victory messages to show up overlapping th
 
 Problems not yet solved: Formatting the game for mobile, and different web browsers. Tried to open it on an iphone but the grid was not visible. Simplifying the javascript code, as it is very repetitive and could be cut down using loops + arrays rather than multiple if statements. 
 
-4. Challenges 
+Challenges 
+
 Attempting to simplify the javascript in a short time. Only created more bugs so I had to leave it as it is. Need more time and planning to be able to refactor it. 
 Would have liked to add AI if I had more time and figure out the logic in how to do that. 
 
-5. Lessons
+Lessons
+
 Planning is the most important thing you can do! Going in having a clear cut plan helped a lot in creating the game. Previously when I have tried to create things, in homework etc, it has seemed more complicated because of not having a clear plan and creates more bugs and confusing logic. 
 Hit the requirements before being carried away by other bonus aspects. 
 
-6. Credits: 
+Credits: 
+
 Icons: https://www.flaticon.com/packs/pokemon-go/2
-Credit: Roundicons Freebies (free to use if credited)
+Credit: Roundicons Freebies (free to use)
+
 Background Image: https://www.pinterest.com.au/pin/151574343683447160/
 Credit: https://www.deviantart.com/schmoek
+
 Background music audio: https://www.youtube.com/watch?v=-BKfhq_TtcE&t=38s&ab_channel=braix
 Credit: Youtube (Creative Commons Attribution license (reuse allowed))
+
 Animations: https://animate.style/
+
 Font: Google Fonts
+
+Trees for grid: Screenshot from Pokemon game...
+
 Audio sound effects: https://freesound.org (free to use)
+
 GO: https://www.flickr.com/photos/bagogames/25914117692/in/photostream/ (Creative Commons)
