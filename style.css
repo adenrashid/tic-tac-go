@@ -315,7 +315,7 @@ audio {
         border: 12px solid black;
         height: 90px;
         width: 90px;
-        border-image: url(tree.png) 20 round;
+        border-image: url(tree.png) 40 round;
     }
 
     .box:hover {
