@@ -92,12 +92,13 @@ planning
 // do basic html and css first 
 // make a grid 3 by 3 
 // make divs for each grid box 
-// make the items hidden, and unhidden when clicked on the grid box through DOM principles as we have practiced
+// make the items hidden, and unhidden when clicked on the grid box through DOM principles as we have practiced using classList 
 // functions are called on click 
 // when one player gets 3 in a row or diagonally, its a win 
     // can program this in an if statement and class name as hidden or unhidden 
 // make a pop up only visible when one person wins  
 alternate clicking mean its P1 or P2s turn i.e. even clicks are P1 and odd clicks are P2
+// customise it for smaller devices i.e. phones 
 
 // make a reset button so you can start the game over again --> on click, reset all of the icons to hidden again and restart the game 
 
@@ -105,7 +106,7 @@ alternate clicking mean its P1 or P2s turn i.e. even clicks are P1 and odd click
 
 // at the top of the page you can put the icons that players want to play with, and depending on which one is clicked, go with those in the code 
 
-// for AI, can make it like the pre work exercise, random generation to fill in a box Math.random Math.floor and give the grid boxes numbers 
+// for AI, can make it like the pre work exercise, random generation to fill in a box Math.random Math.floor and give the grid boxes numbers ???
 
 // https://www.flaticon.com/packs/pokemon-go/2 to get the icons 
 
@@ -144,6 +145,7 @@ Problems not yet solved: Formatting the game for mobile, and different web brows
 
 4. Challenges 
 Attempting to simplify the javascript in a short time. Only created more bugs so I had to leave it as it is. Need more time and planning to be able to refactor it. 
+Would have liked to add AI if I had more time and figure out the logic in how to do that. 
 
 5. Lessons
 Planning is the most important thing you can do! Going in having a clear cut plan helped a lot in creating the game. Previously when I have tried to create things, in homework etc, it has seemed more complicated because of not having a clear plan and creates more bugs and confusing logic. 
@@ -158,5 +160,5 @@ Background music audio: https://www.youtube.com/watch?v=-BKfhq_TtcE&t=38s&ab_cha
 Credit: Youtube (Creative Commons Attribution license (reuse allowed))
 Animations: https://animate.style/
 Font: Google Fonts
-Audio sound effects: https://freesound.org/browse/tags/pop/ (free to use)
+Audio sound effects: https://freesound.org (free to use)
 GO: https://www.flickr.com/photos/bagogames/25914117692/in/photostream/ (Creative Commons)

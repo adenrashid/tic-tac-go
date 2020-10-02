@@ -59,9 +59,9 @@ function addToPlayers(event) {
         gameContainer.classList.remove('gone');
         resetButton.classList.remove('gone');
         timesClicked = 0;
-            for (var i = 1; i < icons.length; i++) {
-                icons[i].removeEventListener('click', addToPlayers);
-            };
+        for (var i = 1; i < icons.length; i++) {
+            icons[i].removeEventListener('click', addToPlayers);
+        };
     };
 };
 
@@ -70,6 +70,8 @@ function addToPlayers(event) {
 for (var i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener('click', handleClick);
 };
+
+//handle click function 
 
 function handleClick(event) {
     event.target.classList.remove('hidden');
@@ -102,7 +104,7 @@ function handleClick(event) {
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
         };
-    }
+    };
     if (boxes[3].classList[1] == boxes[4].classList[1] && boxes[3].classList[1] == boxes[5].classList[1]) {
         if (boxes[3].classList[1] == player1.classList[0]) {
             victory1.classList.remove('gone');
@@ -133,7 +135,7 @@ function handleClick(event) {
             audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
-        }
+        };
     };
 // vertical line wins
     if (boxes[0].classList[1] == boxes[3].classList[1] && boxes[0].classList[1] == boxes[6].classList[1]) {
@@ -166,7 +168,7 @@ function handleClick(event) {
             audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
-        }
+        };
     }; 
     if (boxes[2].classList[1] == boxes[5].classList[1] && boxes[2].classList[1] == boxes[8].classList[1]) {
         if (boxes[2].classList[1] == player1.classList[0]) {
@@ -182,7 +184,7 @@ function handleClick(event) {
             audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
-        }
+        };
     }; 
 // diagonal line wins
     if (boxes[0].classList[1] == boxes[4].classList[1] && boxes[0].classList[1] == boxes[8].classList[1]) {
@@ -199,7 +201,7 @@ function handleClick(event) {
             audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
-        }
+        };
     }; 
     if (boxes[2].classList[1] == boxes[4].classList[1] && boxes[2].classList[1] == boxes[6].classList[1]) {
         if (boxes[2].classList[1] == player1.classList[0]) {
@@ -215,13 +217,13 @@ function handleClick(event) {
             audio.play();
             player2Score++;
             score2.textContent = `P2: ${player2Score}`;
-        }
+        };
     }
     for (var i = 0; i < boxes.length; i++) {
         if (event.target.classList.contains('hidden')) {
             timesClickedBoxes++;
-        }
-    }
+        };
+    };
 // draw condition
     if (timesClicked % 9 == 0 && victory1.classList.contains('gone') && victory2.classList.contains('gone')) {
         draw.classList.remove('gone');
@@ -233,11 +235,11 @@ function handleClick(event) {
     if (victory1.classList.contains('gone') == false || victory2.classList.contains('gone') == false) {
         for (var i = 0; i < boxes.length; i++) {
             boxes[i].removeEventListener('click', handleClick);
-        }
-    }
+        };
+    };
 };
 
-// reset button functionality
+// reset button function
 
 function reset() {
     for (var i = 0; i < boxes.length; i++) {
