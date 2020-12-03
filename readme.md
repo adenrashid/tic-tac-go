@@ -6,7 +6,7 @@
 
 ## How to Play 
 
-- The objective of the game is to get 3 of the same symbol in he samr row, column, or diagnomally. 
+- The objective of the game is to get 3 of the same symbol in the same row, column, or diagnomally. 
 - The first player that achieves this wins! 
 - The game involves two players, and I have made it possible for players to choose their icon. 
 - Just click your icon when the game prompts you to select it. 
@@ -49,12 +49,16 @@
 ## Challenges 
 
 - Attempting to simplify the javascript in a short time. Only created more bugs so I had to leave it as it is. Need more time and planning to be able to refactor it. 
-Would have liked to add AI if I had more time and figure out the logic in how to do that. 
 
 ## Lessons
 
 - Planning is the most important thing you can do! Going in having a clear cut plan helped a lot in creating the game. Previously when I have tried to create things, in homework etc, it has seemed more complicated because of not having a clear plan and creates more bugs and confusing logic. 
-Hit the requirements before being carried away by other bonus aspects. 
+- Hit the requirements before being carried away by other bonus aspects. 
+
+## Stretch Goals 
+- Implement player vs computer option 
+- Would have liked to add AI if I had more time and figure out the logic in how to do that. 
+- Refactoring, cleaning code and directories, layout of project 
 
 ## Credits
 
