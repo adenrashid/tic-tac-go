@@ -1,6 +1,6 @@
 # TIC TAC GO 
 
-![game]('/game.png')
+![game](/game.png)
 
 ### Click here to play: https://adenrashid.github.io/tic-tac-go/
 
@@ -22,7 +22,7 @@
 
 ## Planning 
 
-![plan]('/plan.png')
+![plan](/plan.png)
 
 - Approach: Outlined above in planning, written plan and mockup drawn first. I figured out how the game would work in my planning and then implemented this when I started building the game. Started by declaring variables, then writing the functions and within those, all the if statements to create the logic of the game. 
 
